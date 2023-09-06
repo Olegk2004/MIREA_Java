@@ -6,8 +6,8 @@ import java.awt.event.ActionListener;
 public class Main {
     public static void main(String args[]) {
 
-        final int[] milanscore = {0};
-        final int[] RMscore = {0};
+        final int[] milanScore = {0};
+        final int[] rmScore = {0};
 
         JFrame frame = new JFrame("Match");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -33,12 +33,12 @@ public class Main {
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                milanscore[0]++;
-                result.setText("Result: " + milanscore[0] + " X " + RMscore[0]);
+                milanScore[0]++;
+                result.setText("Result: " + milanScore[0] + " X " + rmScore[0]);
                 lastscorer.setText("Last Scorer: AC Milan");
-                if (milanscore[0] > RMscore[0]) {
+                if (milanScore[0] > rmScore[0]) {
                     winner.setText("Winner: AC Milan");
-                } else if (RMscore[0] > milanscore[0]) {
+                } else if (rmScore[0] > milanScore[0]) {
                     winner.setText("Winner: Real Madrid");
                 } else {
                     winner.setText("Winner: DRAW");
@@ -49,12 +49,12 @@ public class Main {
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                RMscore[0]++;
-                result.setText("Result: " + milanscore[0] + " X " + RMscore[0]);
+                rmScore[0]++;
+                result.setText("Result: " + milanScore[0] + " X " + rmScore[0]);
                 lastscorer.setText("Last Scorer: Real Madrid");
-                if (milanscore[0] > RMscore[0]) {
+                if (milanScore[0] > rmScore[0]) {
                     winner.setText("Winner: AC Milan");
-                } else if (RMscore[0] > milanscore[0]) {
+                } else if (rmScore[0] > milanScore[0]) {
                     winner.setText("Winner: Real Madrid");
                 } else {
                     winner.setText("Winner: DRAW");

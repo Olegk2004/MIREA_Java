@@ -1,3 +1,4 @@
+import jdk.jshell.execution.LoaderDelegate;
 
 import java.text.NumberFormat;
 import java.util.Scanner;
@@ -71,6 +72,8 @@ public class currency_converter {
                 outpay = usdpay*0.792519;
                 res = n4.format(outpay);
                 break;
+            default:
+                System.out.println("Неизвестная страна желаемой валюты");
         }
         System.out.println("Переведенная валюта: "+res);
     }

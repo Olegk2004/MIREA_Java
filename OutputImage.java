@@ -7,7 +7,7 @@ import javax.imageio.ImageIO;
 import java.awt.Graphics;
 
 
-public class Main {
+public class OutputImage {
     static Image image;
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

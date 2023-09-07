@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main {
+public class FootballMatch {
     public static void main(String args[]) {
 
         final int[] milanScore = {0};

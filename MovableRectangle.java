@@ -44,4 +44,12 @@ class MovableRectangle implements Movable {
     public void right() {
         this.x++;
     }
+
+    public static void main(String[] args) {
+        MovableRectangle rect1 = new MovableRectangle(0, 0, 20, 25);
+        rect1.ToString();
+        rect1.up();
+        rect1.left();
+        rect1.ToString();
+    }
 }

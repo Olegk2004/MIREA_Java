@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+class From1ToN {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите n от 2 до 3000: ");

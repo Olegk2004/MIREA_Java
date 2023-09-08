@@ -1,22 +1,29 @@
 public class Person {
-    private String fname = "*";
-    private String lname = "*";
-    private String mname = "*";
+    private String fName = "*";
+    private String lName = "*";
+    private String mName = "*";
 
-    public void setFname(String fname) {
-        this.fname = fname;
+    public void setFName(String fname) {
+        this.fName = fname;
     }
 
-    public void setLname(String lname) {
-        this.lname = lname;
+    public void setLName(String lname) {
+        this.lName = lname;
     }
 
     public void setMname(String mname) {
-        this.mname = mname;
+        this.mName = mname;
     }
 
     public String getInfo(){
-        String s = lname + " " + fname.charAt(0) + "." + mname.charAt(0);
-        return s;
+        return lName + " " + fName.charAt(0) + "." + mName.charAt(0);
+    }
+    public static void main(String[] args) {
+        Person p1 = new Person();
+        p1.setLName("Kokoncev");
+        p1.setFName("Oleg");
+        p1.setMname("Dmitrievich");
+        System.out.println(p1.getInfo());
     }
 }
+

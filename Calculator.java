@@ -1,5 +1,5 @@
 import com.sun.jdi.event.ExceptionEvent;
-
+import java.util.Random;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -13,8 +13,9 @@ class Calculator extends JFrame{
     Font fnt = new Font("Times new roman",Font.BOLD,20);
     Calculator(){
         super("Example");
-        setLayout(new FlowLayout());
-        setSize(250,150);
+
+        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
+        setSize(150,250);
 // создаем надпись 1
         add(new JLabel("1st Number"));
 // добавляем текстовое поле jta1
@@ -26,6 +27,7 @@ class Calculator extends JFrame{
 // добавляем к
         add(plus);
         add(minus);
+
         add(multiply);
         add(div);
 //добавляем слушателя к кнопке
@@ -93,6 +95,10 @@ class Calculator extends JFrame{
             }
         });
         setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new Calculator();
     }
 //В main вызвать: new Calculator();
 }

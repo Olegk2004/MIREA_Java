@@ -4,14 +4,25 @@ public class Student2 {
     private String spec;
     private int course;
     private String group;
+    private double score;
 
-    public Student2(String fN, String sN, String spec, int course, String gr){
+    public Student2(String fN, String sN, String spec, int course, String gr, double score){
         this.course = course;
         this.firstName = fN;
         this.spec = spec;
         this.secondName = sN;
         this.group = gr;
+        this.score = score;
     }
+
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
+    }
+
     public String getFirstName() {
         return firstName;
     }

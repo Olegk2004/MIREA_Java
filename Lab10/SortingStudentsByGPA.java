@@ -30,7 +30,7 @@ public class SortingStudentsByGPA {
         }
     }
     public void quickSort() {
-        iDNumber.sort(Comparator.comparing(Student2::getScore).reversed());
+        iDNumber.sort(Comparator.comparingDouble(Student2::getScore).reversed());
     }
     public void sortByFirstName() {
         iDNumber.sort(Comparator.comparing(Student2::getFirstName));
